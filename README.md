@@ -4,25 +4,27 @@ We use and explain Resnet50 architecture in this repository
 
 ## <span style="color:orange">Resnets</span>
 
-The original ResNet architecture was ResNet-34, which comprised 34 weighted layers. It provided a novel way to add more convolutional layers to a CNN, <br>
-without running into the vanishing gradient problem, using the concept of shortcut connections. A shortcut connection “skips over” some layers, <br>
-converting a regular network to a residual network.
+The original ResNet architecture was ResNet-34, which comprised 34 weighted layers. It provided a novel way to <br>
+add more convolutional layers to a CNN, without running into the vanishing gradient problem, using the concept of<br>
+shortcut connections. A shortcut connection “skips over” some layers, converting a regular network to a residual network.
 
-The regular network was based on the VGG neural networks (VGG-16 and VGG-19)—each convolutional network had a 3×3 filter. <br>
-However, a ResNet has fewer filters and is less complex than a VGGNet. A 34-layer ResNet can achieve a performance of 3.6 billion FLOPs, <br>
-and a smaller 18-layer ResNet can achieve 1.8 billion FLOPs, which is significantly faster than a VGG-19 Network with 19.6 billion FLOPs <br>
-(read more in the ResNet paper, He et, al, 2015).
+The regular network was based on the VGG neural networks (VGG-16 and VGG-19)—each convolutional network had <br>
+a 3×3 filter. However, a ResNet has fewer filters and is less complex than a VGGNet. A 34-layer ResNet can achieve <br>
+a performance of 3.6 billion FLOPs, and a smaller 18-layer ResNet can achieve 1.8 billion FLOPs, which is significantly<br>
+faster than a VGG-19 Network with 19.6 billion FLOPs (read more in the ResNet paper, He et, al, 2015).
 
-The ResNet architecture follows two basic design rules. First, the number of filters in each layer is the same depending on the size of the <br>
-output feature map. Second, if the feature map’s size is halved, it has double the number of filters to maintain the time complexity of each layer.
+The ResNet architecture follows two basic design rules. First, the number of filters in each layer is the same depending<br>
+on the size of the output feature map. Second, if the feature map’s size is halved, it has double the number of filters to<br>
+maintain the time complexity of each layer.
 
 <a><img src="images/resnet.png"/></a>
 
 ## <span style="color:green">Resnet50</span>
 
-ResNet-50 has an architecture based on the model depicted above, but with one important difference. The 50-layer ResNet uses a bottleneck design <br>
-for the building block. A bottleneck residual block uses 1×1 convolutions, known as a “bottleneck”, which reduces the number of parameters and <br>
-matrix multiplications. This enables much faster training of each layer. It uses a stack of three layers rather than two layers.
+ResNet-50 has an architecture based on the model depicted above, but with one important difference. The 50-layer ResNet<br>
+uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known as a <br>
+“bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster training of<br>
+each layer. It uses a stack of three layers rather than two layers.
 
 The 50-layer ResNet architecture includes the following elements, as shown in the table below:
 
@@ -44,8 +46,8 @@ The 50-layer ResNet architecture includes the following elements, as shown in th
 - In this project we use [ImageNet2012](https://www.image-net.org/download.php).
 
 - And we use [oxford_iiit_pet](https://www.tensorflow.org/datasets/catalog/oxford_iiit_pet) dataset from tensorflow:<br>
-The Oxford-IIIT pet dataset is a 37 category pet image dataset with roughly 200 images for each class. <br>
-The images have large variations in scale, pose and lighting. All images have an associated ground truth annotation of breed.
+  The Oxford-IIIT pet dataset is a 37 category pet image dataset with roughly 200 images for each class. <br>
+  The images have large variations in scale, pose and lighting. All images have an associated ground truth annotation of breed.
 
 # Installation
 
