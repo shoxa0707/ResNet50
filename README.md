@@ -21,10 +21,10 @@ to maintain the time complexity of each layer.
 
 ## <span style="color:green">Resnet50</span>
 
-ResNet-50 has an architecture based on the model depicted above, but with one important difference. The 50-layer ResNet<br>
-uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known as a <br>
-“bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster training of<br>
-each layer. It uses a stack of three layers rather than two layers.
+ResNet-50 has an architecture based on the model depicted above, but with one important difference. The 50-layer<br>
+ResNet uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known <br>
+as a “bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster<br>
+training of each layer. It uses a stack of three layers rather than two layers.
 
 The 50-layer ResNet architecture includes the following elements, as shown in the table below:
 
