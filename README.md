@@ -14,8 +14,8 @@ a performance of 3.6 billion FLOPs, and a smaller 18-layer ResNet can achieve 1.
 faster than a VGG-19 Network with 19.6 billion FLOPs (read more in the ResNet paper, He et, al, 2015).
 
 The ResNet architecture follows two basic design rules. First, the number of filters in each layer is the same depending<br>
-on the size of the output feature map. Second, if the feature map’s size is halved, it has double the number of filters to<br>
-maintain the time complexity of each layer.
+on the size of the output feature map. Second, if the feature map’s size is halved, it has double the number of filters<br>
+to maintain the time complexity of each layer.
 
 <a><img src="images/resnet.png"/></a>
 
